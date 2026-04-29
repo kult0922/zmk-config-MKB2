@@ -1,10 +1,12 @@
 // #include <layout_shift.dtsi>
 
 #include <layout_shift_kp_override.dtsi>
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
@@ -22,24 +24,18 @@
 };
 
 / {
-    enc_scroll: enc_scroll {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "Def";
             bindings = <
-&kp TAB           &kp Q         &kp W      &kp E     &lt NUM R         &kp T              &kp Y          &kp U              &kp I       &kp O      &kp P      &kp MINUS
-&kp LEFT_CONTROL  &kp A         &kp S      &kp D     &lt SYMBOL F      &kp G              &kp H          &kp J              &kp K       &kp L      &kp SEMI   &kp ENTER
-&kp LSHFT         &kp Z         &kp X      &kp C     &lt MOUSE V       &kp B              &kp N          &kp M              &kp COMMA   &kp DOT    &kp SQT    &kp FSLH
+&kp TAB           &kp Q         &kp W      &kp E     &lt NUM R               &kp T              &kp Y          &kp U                    &kp I       &kp O      &kp P      &kp MINUS
+&kp LEFT_CONTROL  &kp A         &kp S      &kp D     &lt SYMBOL F            &kp G              &kp H          &kp J                    &kp K       &kp L      &kp SEMI   &kp ENTER
+&kp LSHFT         &kp Z         &kp X      &kp C     &lt MOUSE V             &kp B              &kp N          &kp M                    &kp COMMA   &kp DOT    &kp SQT    &kp FSLH
 &mt LCTL ESC      &kp LEFT_GUI  &kp LALT             &mt LEFT_COMMAND LANG2  &lt NUM SPACE      &kp BACKSPACE  &mt RIGHT_COMMAND LANG1              &kp EXCL   &kp QMARK  &kp GRAVE
-&kp LG(Z)         &kp UP        &kp SPACE  &kp DOWN  &kp RIGHT                                           &kp HOME           &kp LC(UP)  &kp ENTER  &kp PG_DN  &kp END
-                                           &kp A                                                                            &kp B
+&kp LG(Z)         &kp UP        &kp SPACE  &kp DOWN  &kp RIGHT                                                 &kp HOME                 &kp LC(UP)  &kp ENTER  &kp PG_DN  &kp END
+                                           &kp A                                                                                        &kp B
             >;
 
             sensor-bindings = <&enc_scroll &inc_dec_kp PG_UP PG_DN>;
@@ -48,12 +44,12 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp GRAVE  &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME          &trans         &kp PLUS       &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END           &trans         &kp MINUS      &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans     &kp BKSP   &kp DEL    &trans     &trans            &trans         &kp NUMBER_0   &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp GRAVE  &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME                &trans         &kp PLUS       &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END                 &trans         &kp MINUS      &kp NUMBER_4             &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans     &kp BKSP   &kp DEL    &trans     &trans                  &trans         &kp NUMBER_0   &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACE        &kp RIGHT_BRACE
 &trans     &trans     &kp LALT              &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &mt RIGHT_COMMAND LANG1                &trans        &trans                &trans
-&kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                                       &kp HOME           &kp PG_UP     &kp ENTER     &kp PG_DN             &kp END
-                                 &kp A                                                                         &kp B
+&kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                                             &kp HOME                 &kp PG_UP     &kp ENTER     &kp PG_DN             &kp END
+                                 &kp A                                                                                     &kp B
             >;
 
             sensor-bindings = <&enc_scroll &inc_dec_kp PG_UP PG_DN>;
@@ -62,12 +58,12 @@
         symbol_layer {
             label = "Sym";
             bindings = <
-&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4            &kp N5         &kp N6         &kp AT_SIGN   &kp HASH   &kp DOLLAR     &kp N0     &trans
-&trans           &trans         &trans     &trans    &trans            &trans         &kp MINUS      &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
-&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans            &trans         &trans         &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
+&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4                  &kp N5         &kp N6         &kp AT_SIGN   &kp HASH   &kp DOLLAR     &kp N0     &trans
+&trans           &trans         &trans     &trans    &trans                  &trans         &kp MINUS      &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
+&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans                  &trans         &trans         &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
 &trans           &kp ENTER      &kp ENTER            &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &kp ENTER                &trans         &trans     &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                       &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
-                                           &kp A                                                                   &kp B
+&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                             &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
+                                           &kp A                                                                         &kp B
             >;
 
             sensor-bindings = <&enc_scroll &inc_dec_kp PG_UP PG_DN>;
@@ -90,15 +86,17 @@
         scroll_layer {
             label = "Scr";
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                              &kp B
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &bt BT_PRV  &trans     &trans     &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1    &mkp MB3   &mkp MB2   &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans      &trans     &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans      &trans  &trans                 &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME    &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                             &kp A                                                &kp B
             >;
 
-            sensor-bindings = <&enc_scroll &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         bt_layer {
