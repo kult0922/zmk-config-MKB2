@@ -1,6 +1,14 @@
+// カスタムビヘービア定義ファイル
+// MKB.dtsi から include されるため、L/R 全ビルドで有効になる。
+// MKB.keymap に書くと keymap-editor の保存で上書き消去されるため、ここで管理する。
+
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    // ロータリーエンコーダー用スクロールビヘービア
+    // C_AC_SCROLL_UP/DOWN (Consumer Control) は macOS で認識されないため
+    // HID マウスホイールイベント (msc) を直接送信する。
+    // スクロール量 80 は ZMK_POINTING_DEFAULT_SCRL_VAL (デフォルト10) より大きな値。
     enc_scroll: enc_scroll {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
