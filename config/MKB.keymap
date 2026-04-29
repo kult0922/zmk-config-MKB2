@@ -30,7 +30,7 @@
 &kp TAB           &kp Q         &kp W      &kp E     &lt NUM R         &kp T              &kp Y          &kp U              &kp I       &kp O      &kp P      &kp MINUS
 &kp LEFT_CONTROL  &kp A         &kp S      &kp D     &lt SYMBOL F      &kp G              &kp H          &kp J              &kp K       &kp L      &kp SEMI   &kp ENTER
 &kp LSHFT         &kp Z         &kp X      &kp C     &lt MOUSE V       &kp B              &kp N          &kp M              &kp COMMA   &kp DOT    &kp SQT    &kp FSLH
-&mt LCTL ESC      &kp LEFT_GUI  &kp LALT             &kp LEFT_COMMAND  &lt NUM SPACE      &kp BACKSPACE  &kp RIGHT_COMMAND              &kp EXCL   &kp QMARK  &kp GRAVE
+&mt LCTL ESC      &kp LEFT_GUI  &kp LALT             &mt LEFT_COMMAND LANG2  &lt NUM SPACE      &kp BACKSPACE  &mt RIGHT_COMMAND LANG1              &kp EXCL   &kp QMARK  &kp GRAVE
 &kp LG(Z)         &kp UP        &kp SPACE  &kp DOWN  &kp RIGHT                                           &kp HOME           &kp LC(UP)  &kp ENTER  &kp PG_DN  &kp END
                                            &kp A                                                                            &kp B
             >;
@@ -44,7 +44,7 @@
 &kp GRAVE  &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME          &trans         &kp PLUS       &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END           &trans         &kp MINUS      &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &trans     &kp BKSP   &kp DEL    &trans     &trans            &trans         &kp NUMBER_0   &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans     &trans     &kp LALT              &kp LEFT_COMMAND  &kp SPACE      &kp BACKSPACE  &kp RIGHT_COMMAND                &trans        &trans                &trans
+&trans     &trans     &kp LALT              &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &mt RIGHT_COMMAND LANG1                &trans        &trans                &trans
 &kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                                       &kp HOME           &kp PG_UP     &kp ENTER     &kp PG_DN             &kp END
                                  &kp A                                                                         &kp B
             >;
@@ -58,7 +58,7 @@
 &kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4            &kp N5         &kp N6         &kp AT_SIGN   &kp HASH   &kp DOLLAR     &kp N0     &trans
 &trans           &trans         &trans     &trans    &trans            &trans         &kp MINUS      &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
 &mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans            &trans         &trans         &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
-&trans           &kp ENTER      &kp ENTER            &kp LEFT_COMMAND  &kp SPACE      &kp BACKSPACE  &kp ENTER                &trans         &trans     &trans
+&trans           &kp ENTER      &kp ENTER            &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &kp ENTER                &trans         &trans     &trans
 &kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                       &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
                                            &kp A                                                                   &kp B
             >;
