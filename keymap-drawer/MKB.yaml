@@ -160,7 +160,7 @@ layers:
   - ENTER
   - LEFT COMMAND
   - SPACE
-  - ENTER
+  - BACKSPACE
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
