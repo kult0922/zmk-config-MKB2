@@ -15,6 +15,8 @@
     enc_scroll: enc_scroll {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
+        // tap-ms must exceed msc's trigger-period-ms (16ms default) so tick_work fires before release
+        tap-ms = <20>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
     };
 };
