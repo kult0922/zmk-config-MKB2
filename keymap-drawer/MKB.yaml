@@ -53,7 +53,7 @@ layers:
   - DOWN
   - RIGHT
   - HOME
-  - PG UP
+  - Ctl+UP
   - ENTER
   - PG DN
   - END
