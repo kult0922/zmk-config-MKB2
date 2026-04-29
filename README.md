@@ -64,6 +64,39 @@ The name "MeKaBu" encompasses multiple meanings:
 - Mechanical Components (メカニカルな部品群)
 - Sprouting Stock - branching growth structure (芽株 - 分岐して増殖する構造)
 
+## キーマップの変更をキーボードに反映する
+
+### 1. キーマップを変更する
+- keymap-editor でブラウザ上から編集して push、または `config/MKB.keymap` を直接編集して push
+
+### 2. GitHub Actions のビルドを待つ
+- push をトリガーに自動ビルドが走り、数分後に `firmware/main/` へ `.uf2` ファイルが自動コミットされる
+
+### 3. `.uf2` ファイルをダウンロードする
+- `firmware/main/` から使用モジュールに対応するファイルを選ぶ
+
+| ファイル名 | 対象 |
+|---|---|
+| `MKB_L_MODULE_TB.uf2` | 左側・トラックボール |
+| `MKB_L_MODULE_JOY.uf2` | 左側・ジョイスティック |
+| `MKB_L_MODULE_ENC.uf2` | 左側・エンコーダー |
+| `MKB_L_MODULE_RZT.uf2` | 左側・エンコーダー(RZT) |
+| `MKB_L_MODULE_TPD.uf2` | 左側・トラックパッド |
+| `MKB_L_MODULE_KEY.uf2` | 左側・追加キー |
+| `MKB_R_MODULE_TBv4.uf2` | 右側・トラックボール v4 |
+| `MKB_R_MODULE_TBv3.uf2` | 右側・トラックボール v3 |
+| `MKB_R_MODULE_JOY.uf2` | 右側・ジョイスティック |
+| `MKB_R_MODULE_ENC.uf2` | 右側・エンコーダー |
+| `MKB_R_MODULE_RZT.uf2` | 右側・エンコーダー(RZT) |
+| `MKB_R_MODULE_TPD.uf2` | 右側・トラックパッド |
+| `MKB_R_MODULE_KEY.uf2` | 右側・追加キー |
+
+### 4. キーボードに書き込む
+1. XIAO BLE のリセットボタンを **素早く2回押す** → PC にストレージとして認識される
+2. ダウンロードした `.uf2` をそのストレージに **ドラッグ&ドロップ** → 自動で書き込まれ再起動
+
+左右両方のモジュールを使用している場合は、それぞれに同じ手順で書き込む。
+
 ---
 *This configuration exists in the liminal space between reality and digital dreams.*  
 *この設定は、現実とデジタルの夢の間の境界に存在する。*
