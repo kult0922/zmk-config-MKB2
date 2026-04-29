@@ -48,6 +48,9 @@ jobs:
         with:
           path: firmware/${{ steps.branch-name.outputs.branch }}
 
+      - name: Pull latest changes before commit
+        run: git pull --rebase origin ${{ steps.branch-name.outputs.branch }}
+
       - name: Commit updated images
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
