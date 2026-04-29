@@ -5,7 +5,7 @@ layers:
   - Q
   - W
   - E
-  - R
+  - {t: R, h: Fnc}
   - T
   - Y
   - U
@@ -17,7 +17,7 @@ layers:
   - A
   - S
   - D
-  - F
+  - {t: F, h: Num}
   - G
   - H
   - J
@@ -29,7 +29,7 @@ layers:
   - Z
   - X
   - C
-  - V
+  - {t: V, h: Mouse}
   - B
   - N
   - M
@@ -64,7 +64,7 @@ layers:
   - PG UP
   - UP
   - PG DN
-  - HOME
+  - {t: HOME, type: held}
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -100,7 +100,7 @@ layers:
   - {t: ▽, type: trans}
   - LALT
   - ENTER
-  - {t: ENTER, type: held}
+  - ENTER
   - ENTER
   - ENTER
   - {t: ▽, type: trans}
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - MINUS
   - EQUAL
@@ -206,7 +206,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
