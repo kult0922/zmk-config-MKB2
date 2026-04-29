@@ -47,7 +47,7 @@ layers:
   - '!'
   - QMARK
   - GRAVE
-  - LEFT
+  - Gui+Z
   - UP
   - SPACE
   - DOWN
