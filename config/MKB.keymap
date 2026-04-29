@@ -55,12 +55,12 @@
         symbol_layer {
             label = "Sym";
             bindings = <
-&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4            &kp N5         &kp N6     &kp AT_SIGN   &kp HASH   &kp DOLLAR     &kp N0     &trans
-&trans           &trans         &trans     &trans    &trans            &trans         &kp MINUS  &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
-&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans            &trans         &trans     &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
-&trans           &kp ENTER      &kp ENTER            &kp LEFT_COMMAND  &kp SPACE      &kp ENTER  &kp ENTER                &trans         &trans     &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                   &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
-                                           &kp A                                                               &kp B
+&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4            &kp N5         &kp N6         &kp AT_SIGN   &kp HASH   &kp DOLLAR     &kp N0     &trans
+&trans           &trans         &trans     &trans    &trans            &trans         &kp MINUS      &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
+&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans            &trans         &trans         &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
+&trans           &kp ENTER      &kp ENTER            &kp LEFT_COMMAND  &kp SPACE      &kp BACKSPACE  &kp ENTER                &trans         &trans     &trans
+&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                       &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
+                                           &kp A                                                                   &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
