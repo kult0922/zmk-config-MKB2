@@ -5,7 +5,7 @@ layers:
   - Q
   - W
   - E
-  - {t: R, h: Fnc}
+  - {t: R, h: Num}
   - T
   - Y
   - U
@@ -17,7 +17,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: Num}
+  - {t: F, h: Sym}
   - G
   - H
   - J
@@ -41,7 +41,7 @@ layers:
   - LEFT GUI
   - LALT
   - LEFT COMMAND
-  - {t: SPACE, h: Fnc}
+  - {t: SPACE, h: Num}
   - BACKSPACE
   - RIGHT COMMAND
   - '!'
@@ -59,7 +59,7 @@ layers:
   - END
   - A
   - B
-  Fnc:
+  Num:
   - GRAVE
   - PG UP
   - UP
@@ -118,7 +118,7 @@ layers:
   - END
   - A
   - B
-  Num:
+  Sym:
   - CAPS
   - '1'
   - '2'
