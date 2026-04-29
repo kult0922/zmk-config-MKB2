@@ -99,10 +99,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
-  - ENTER
-  - ENTER
-  - ENTER
-  - ENTER
+  - LEFT COMMAND
+  - SPACE
+  - BACKSPACE
+  - RIGHT COMMAND
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
