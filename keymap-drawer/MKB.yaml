@@ -38,7 +38,7 @@ layers:
   - SQT
   - FSLH
   - {t: ESC, h: LCTL}
-  - LEFT GUI
+  - BT
   - LALT
   - {t: LANG2, h: LEFT COMMAND}
   - {t: SPACE, h: Num}
@@ -333,7 +333,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
