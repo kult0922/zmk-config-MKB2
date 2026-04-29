@@ -23,7 +23,7 @@
 / {
     enc_scroll: enc_scroll {
         compatible = "zmk,behavior-sensor-rotate";
-        #binding-cells = <0>;
+        #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
     };
 
