@@ -6,6 +6,7 @@ on:
       - config/**
       - boards/**
       - build.yaml
+      - snippets/**
  
 jobs:
   build:
