@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - MINUS
+  - GRAVE
   - LEFT CONTROL
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - SEMI
-  - ENTER
+  - MINUS
   - LSHFT
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - SQT
-  - FSLH
+  - ENTER
   - {t: ESC, h: LCTL}
   - BT
   - LALT
@@ -46,7 +46,7 @@ layers:
   - {t: LANG1, h: RIGHT COMMAND}
   - '!'
   - QMARK
-  - GRAVE
+  - SLASH
   - Gui+Z
   - UP
   - SPACE
