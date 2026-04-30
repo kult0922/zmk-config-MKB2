@@ -29,7 +29,7 @@ layers:
   - Z
   - X
   - C
-  - {t: V, h: Mouse}
+  - V
   - B
   - N
   - M
@@ -206,7 +206,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
