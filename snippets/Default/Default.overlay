@@ -1,9 +1,15 @@
 #include <input/processors/runtime-input-processor.dtsi>
 
+/*
+ * トラックボール使用中に自動でマウスレイヤー(3)へ切り替える設定。
+ * activation-delay: 誤爆防止のため200ms継続して動かした場合のみ切り替わる。
+ *   (遅延中にキー入力があればレイヤーは切り替わらない)
+ * deactivation-delay: トラックボールを止めてから500ms後に元のレイヤーへ戻る。
+ */
 &mouse_runtime_input_processor {
     temp-layer-enabled;
     temp-layer = <3>;
-    temp-layer-activation-delay-ms = <0>;
+    temp-layer-activation-delay-ms = <200>;
     temp-layer-deactivation-delay-ms = <500>;
 };
 
