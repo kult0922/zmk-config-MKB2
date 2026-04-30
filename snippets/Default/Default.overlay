@@ -1,10 +1,17 @@
 #include <input/processors/runtime-input-processor.dtsi>
 
 / {
+    auto_mouse_layer: auto_mouse_layer {
+        compatible = "zmk,auto-layer";
+        layer = <3>;
+        toggle-ms = <500>;
+    };
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
+        auto-layer = <&auto_mouse_layer>;
         input-processors = <&zip_xy_scaler 3 5>,
                            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
                            <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
