@@ -103,7 +103,7 @@ layers:
   - SPACE
   - BACKSPACE
   - {t: LANG1, h: RIGHT COMMAND}
-  - {t: ▽, type: trans}
+  - PERIOD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
