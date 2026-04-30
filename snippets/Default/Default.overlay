@@ -1,5 +1,12 @@
 #include <input/processors/runtime-input-processor.dtsi>
 
+&mouse_runtime_input_processor {
+    temp-layer-enabled;
+    temp-layer = <3>;
+    temp-layer-activation-delay-ms = <0>;
+    temp-layer-deactivation-delay-ms = <500>;
+};
+
 / {
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
