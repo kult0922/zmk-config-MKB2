@@ -5,7 +5,7 @@ layers:
   - Q
   - W
   - E
-  - {t: R, h: Num}
+  - {t: R, h: Sym}
   - T
   - Y
   - U
@@ -17,7 +17,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: Sym}
+  - {t: F, h: Num}
   - G
   - H
   - J
@@ -64,21 +64,21 @@ layers:
   - PG UP
   - UP
   - PG DN
-  - {t: HOME, type: held}
+  - HOME
   - {t: ▽, type: trans}
-  - PLUS
-  - '7'
-  - '8'
-  - '9'
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - LEFT PARENTHESIS
   - RIGHT PARENTHESIS
   - '&tog_ls'
   - LEFT
   - DOWN
   - RIGHT
-  - END
+  - {t: END, type: held}
   - {t: ▽, type: trans}
-  - MINUS
+  - PLUS
   - '4'
   - '5'
   - '6'
@@ -90,10 +90,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
-  - '1'
-  - '2'
-  - '3'
+  - MINUS
+  - '7'
+  - '8'
+  - '9'
   - LEFT BRACE
   - RIGHT BRACE
   - {t: ▽, type: trans}
@@ -102,7 +102,7 @@ layers:
   - {t: LANG2, h: LEFT COMMAND}
   - SPACE
   - BACKSPACE
-  - {t: LANG1, h: RIGHT COMMAND}
+  - PERIOD
   - PERIOD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '4'
+  - {t: '4', type: held}
   - '5'
   - '6'
   - AT SIGN
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MINUS
   - PERCENT
