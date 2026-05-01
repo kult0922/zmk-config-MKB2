@@ -4,13 +4,14 @@
  * トラックボール使用中に自動でマウスレイヤー(3)へ切り替える設定。
  * activation-delay: 誤爆防止のため200ms継続して動かした場合のみ切り替わる。
  *   (遅延中にキー入力があればレイヤーは切り替わらない)
- * deactivation-delay: トラックボールを止めてから500ms後に元のレイヤーへ戻る。
+ * deactivation-delay: トラックボールを止めてから5秒後に元のレイヤーへ戻る。
+ *   (マウスクリック以外のキーが押された場合は即座にデフォルトレイヤーへ戻る)
  */
 &mouse_runtime_input_processor {
     temp-layer-enabled;
     temp-layer = <3>;
     temp-layer-activation-delay-ms = <200>;
-    temp-layer-deactivation-delay-ms = <500>;
+    temp-layer-deactivation-delay-ms = <5000>;
 };
 
 / {
@@ -18,7 +19,7 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
-        input-processors = <&zip_xy_scaler 3 5>,
+        input-processors = <&zip_xy_scaler 1 2>,
                            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
                            <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
 
