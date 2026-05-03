@@ -103,7 +103,7 @@ layers:
   - SPACE
   - BACKSPACE
   - PERIOD
-  - PERIOD
+  - EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
