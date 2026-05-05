@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: MKB}
 layers:
   Def:
-  - TAB
+  - {t: TAB, h: Num}
   - Q
   - W
   - E
-  - {t: R, h: Sym}
+  - R
   - T
   - Y
   - U
@@ -17,7 +17,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: Num}
+  - F
   - G
   - H
   - J
@@ -37,7 +37,7 @@ layers:
   - DOT
   - SQT
   - SLASH
-  - {t: ESC, h: LCTL}
+  - {t: ESC, h: Sym}
   - BT
   - LALT
   - {t: LANG2, h: LEFT COMMAND}
@@ -60,7 +60,7 @@ layers:
   - A
   - B
   Num:
-  - GRAVE
+  - {t: GRAVE, type: held}
   - PG UP
   - UP
   - PG DN
@@ -76,7 +76,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - {t: END, type: held}
+  - END
   - {t: ▽, type: trans}
   - PLUS
   - '4'
@@ -123,7 +123,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: '4', type: held}
+  - '4'
   - '5'
   - '6'
   - AT SIGN
@@ -155,7 +155,7 @@ layers:
   - BACKSLASH
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ENTER
   - ENTER
   - {t: LANG2, h: LEFT COMMAND}
