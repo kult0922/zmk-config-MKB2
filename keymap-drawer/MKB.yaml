@@ -50,8 +50,8 @@ layers:
   - Gui+Z
   - UP
   - SPACE
-  - DOWN
-  - RIGHT
+  - Gui+C
+  - Gui+V
   - HOME
   - Ctl+UP
   - ENTER
