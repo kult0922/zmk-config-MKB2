@@ -45,7 +45,7 @@
 &tog_ls    &kp LEFT   &kp DOWN   &kp RIGHT  &kp END                 &trans         &kp PLUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &trans     &kp BKSP   &kp DEL    &trans     &trans                  &trans         &kp MINUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
 &trans     &trans     &kp LALT              &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &kp PERIOD                  &kp EQUAL     &trans                &trans
-&kp LEFT   &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                                             &kp HOME      &kp PG_UP     &kp ENTER     &kp PG_DN             &kp END
+&trans     &trans     &trans     &trans     &trans                                                &trans        &trans        &trans        &trans                &trans
                                  &kp A                                                                          &kp B
             >;
 
@@ -59,7 +59,7 @@
 &trans           &trans         &trans     &trans    &trans                  &trans         &kp MINUS      &kp PERCENT   &kp CARET  &kp AMPERSAND  &kp BSLH   &trans
 &mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans                  &trans         &trans         &kp ASTERISK  &kp PIPE   &kp BACKSLASH  &trans     &trans
 &trans           &kp ENTER      &kp ENTER            &mt LEFT_COMMAND LANG2  &kp SPACE      &kp BACKSPACE  &kp ENTER                &trans         &trans     &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                             &kp HOME      &kp PG_UP  &kp ENTER      &kp PG_DN  &kp END
+&trans           &trans         &trans     &trans    &trans                                                &trans        &trans     &trans         &trans     &trans
                                            &kp A                                                                         &kp B
             >;
 
@@ -73,7 +73,7 @@
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &trans     &mkp MB2   &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+&trans    &trans  &trans     &trans    &trans                         &trans    &trans     &trans     &trans     &trans
                              &kp A                                              &kp B
             >;
 
@@ -87,7 +87,7 @@
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+&trans    &trans  &trans     &trans    &trans                         &trans    &trans     &trans     &trans     &trans
                              &kp A                                              &kp B
             >;
 
@@ -103,7 +103,7 @@
 &trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
 &trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
 &trans      &trans        &trans                      &trans        &trans            &trans          &trans               &trans     &trans     &trans
-&kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                                       &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+&trans      &trans        &trans        &trans        &trans                                          &trans    &trans     &trans     &trans     &trans
                                         &kp A                                                                   &kp B
             >;
 
