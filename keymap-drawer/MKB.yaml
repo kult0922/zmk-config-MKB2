@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: MKB}
 layers:
   Def:
-  - {t: ESC, h: Num}
+  - {t: TAB, h: Num}
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - MINUS
+  - {t: MINUS, s: ESC}
   - LEFT CONTROL
   - A
   - S
@@ -37,7 +37,7 @@ layers:
   - DOT
   - SQT
   - SLASH
-  - {t: TAB, h: Sym}
+  - {t: ESC, h: Sym}
   - BT
   - LALT
   - {t: LANG2, h: LEFT COMMAND}
