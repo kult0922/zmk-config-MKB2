@@ -44,8 +44,8 @@ layers:
   - {t: SPACE, h: Num}
   - BACKSPACE
   - {t: LANG1, h: RIGHT COMMAND}
-  - '!'
-  - QMARK
+  - Gui+C
+  - Gui+V
   - GRAVE
   - Gui+Z
   - UP
