@@ -35,8 +35,8 @@ layers:
   - M
   - COMMA
   - DOT
-  - SQT
   - SLASH
+  - SQT
   - {t: ESC, h: Sym}
   - BT
   - LALT
