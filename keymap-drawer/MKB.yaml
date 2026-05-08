@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: MKB}
 layers:
   Def:
-  - {t: TAB, h: toggle, s: '!'}
+  - {t: TAB, s: '!'}
   - Q
   - W
   - {t: E, h: Num}
