@@ -4,7 +4,7 @@
 
 // msc の引数は SCRL_UP/SCRL_DOWN マクロ経由で渡す必要がある（生の整数は不可）。
 // ZMK_POINTING_DEFAULT_SCRL_VAL を pointing.h より先に定義することでスクロール量を設定する。
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 
 #include <dt-bindings/zmk/pointing.h>
 
