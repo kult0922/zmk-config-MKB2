@@ -33,7 +33,7 @@
         shift_tab: shift_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kt TAB>, <&kp EXCL>;
+            bindings = <&kp TAB>, <&kp EXCL>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
